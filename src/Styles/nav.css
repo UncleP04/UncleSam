@@ -1,0 +1,253 @@
+.btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #2e2e2e3a;
+    transition: all 0.5s ease-in-out;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: var(--blue);
+    color: #f5f5f5;
+    right: 20px;
+    top: 15px;
+    position: fixed;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+    position: absolute;
+    height: 30px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.btn .text {
+    transform: translateX(55px);
+}
+
+.btn:hover .icon {
+    width: 150px;
+}
+
+.btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active .icon {
+    transform: scale(0.85);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    padding: 0 2rem;
+    color: var(--colorH);
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 2px 2px var(--border);
+}
+
+.linkUnderline:hover {
+    cursor: pointer;
+}
+
+.navIcon {
+    visibility: hidden !important;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    background: #e7e5e5;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+nav #links:hover .navIcon {
+    visibility: visible !important;
+}
+
+nav #links {
+    margin: 0 1rem;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+
+
+nav #links:hover {
+    color: var(--bgGreen);
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.bookSection {
+    color: var(--white);
+    background: var(--orange);
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid var(--orange);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bigScreen {
+    display: none;
+}
+
+.smallScreen {
+    display: block;
+}
+
+.linkUnderline {
+    display: inline-block;
+    position: relative;
+}
+
+.linkUnderline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--gbGreen);
+    padding-bottom: -10px;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.linkUnderline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.dropBox {
+    background: #fff;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+}
+
+.dropItem {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    color: #305ec1;
+    padding: 5px;
+}
+
+.active {
+    color: var(--gbGreen);
+}
+
+.dropItem:hover {
+    color: #8e99ce;
+    background: #eeeeee;
+}
+
+@media only screen and (max-width: 2000px) {
+    header h3 img {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    .bigScreen {
+        display: block;
+    }
+
+    .smallScreen {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--blue);
+        transition: 1s;
+        transform: translateY(-100vh);
+        z-index: 1000;
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav #links {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: var(--white);
+    }
+
+    nav #links:hover {
+        color: var(--whiteBg);
+    }
+
+    .bookSection {
+        color: var(--white);
+        border: 1px solid #7c5808;
+    }
+
+    .navIcon {
+        background: var(--gbGreen);
+    }
+}

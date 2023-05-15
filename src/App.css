@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --blue: #351DCA;
+  --paragraph: #090924;
+  --headerFont: 'Instrument Serif',
+    serif;
+}
