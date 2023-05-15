@@ -21,11 +21,17 @@ const Introduction = () => {
               </p>
             </span>
             <div className="webLinks">
-              <Link href="/linkedIn" className="websites">
+              <Link
+                href="https://www.linkedin.com/in/samuelnssien/"
+                className="websites"
+              >
                 LinkedIn
               </Link>
 
-              <Link href="/linkedIn" className="websites">
+              <Link
+                href="https://twitter.com/unclesam_001"
+                className="websites"
+              >
                 Twitter
               </Link>
 
