@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "../Styles/nav.css";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -19,7 +18,9 @@ const Navbar = () => {
             onClick={showNavbar}
             className="linkUnderline active"
             id="links"
-          >Home</a>
+          >
+            Home
+          </a>
           <a
             href="/experience"
             onClick={showNavbar}
@@ -37,12 +38,20 @@ const Navbar = () => {
             Content
           </a>
           <a
-            href="/education"
+            href="/about"
             onClick={showNavbar}
             className="linkUnderline active"
             id="links"
           >
-            Education
+            About
+          </a>
+          <a
+            href="/testimonials"
+            onClick={showNavbar}
+            className="linkUnderline active"
+            id="links"
+          >
+            Testimonials
           </a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             X

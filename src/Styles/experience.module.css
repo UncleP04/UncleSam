@@ -35,6 +35,14 @@
 .leftIntroBox h2 {
     color: var(--white);
     text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.leftIntroBox p {
+   color: rgb(194, 193, 193);
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .leftIntroBox img {
@@ -53,11 +61,12 @@
     border-bottom: 2px solid var(--blue);
     width: 60%;
     margin-bottom: 5%;
+    font-size: 1.5em;
 }
 
 .leftIntroContent span ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
@@ -68,13 +77,16 @@
     font-weight: 400;
     list-style: none;
     padding: 3px 4px;
-    background: whitesmoke;
     font-weight: 500;
     border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
 }
 
 .leftIntroContent span ul li:last-child {
-    grid-column: 2 / 4;
+    /* grid-column: 2 / 4; */
 }
 
 .rightGrid {
@@ -139,6 +151,16 @@
     height: 100%;
 }
 
+.additionBox span div h3{
+    font-weight: bold;
+    color: #090924;
+    font-size: 1.3em;
+}
+
+.additionBox span div p {
+    font-size: 18px;
+}
+
 .additionBox span div h3,
 .additionBox span div p {
     padding-left: 10px;
@@ -184,6 +206,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .leftIntroContent span ul li{
+        background: whitesmoke;
+    }
+
     .rightGrid {
         padding: 20px 0;
         background: none;
@@ -200,15 +226,15 @@
         margin-bottom: 0;
     }
 
-        .leftIntroContent h1 {
-            text-transform: capitalize;
-            border-bottom: 2px solid var(--blue);
-            width: 80%;
-        }
+    .leftIntroContent h1 {
+        text-transform: capitalize;
+        border-bottom: 2px solid var(--blue);
+        width: 80%;
+    }
 
-        .rightGrid h1{
-            width: 80%;
-        }
+    .rightGrid h1 {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 768px) {

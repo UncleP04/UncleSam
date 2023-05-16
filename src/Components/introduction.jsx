@@ -22,21 +22,26 @@ const Introduction = () => {
             </span>
             <div className="webLinks">
               <Link
-                href="https://www.linkedin.com/in/samuelnssien/"
+                to="https://www.linkedin.com/in/samuelnssien/"
                 className="websites"
+                target="_blank"
               >
                 LinkedIn
               </Link>
 
               <Link
-                href="https://twitter.com/unclesam_001"
+                to="https://twitter.com/unclesam_001"
                 className="websites"
+                target="_blank"
               >
                 Twitter
               </Link>
-
-              <Link href="/linkedIn" className="websites">
-                Instagram
+              <Link
+                to="https://officialrepublic.onrender.com/"
+                className="websites"
+                target="_blank"
+              >
+                WebSite
               </Link>
             </div>
           </div>
@@ -68,8 +73,18 @@ const Introduction = () => {
               <span class="icon arrow"></span>
             </span>
             <span class="button-text">
-              <Link className="link" to="/education">
-                Education
+              <Link className="link" to="/about">
+                About
+              </Link>
+            </span>
+          </button>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">
+              <Link className="link" to="/testimonials">
+                Testimonials
               </Link>
             </span>
           </button>

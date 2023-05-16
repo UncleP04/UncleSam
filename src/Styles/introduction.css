@@ -162,7 +162,7 @@ button:hover .link {
 .webLinks {
     position: absolute;
     top: 45%;
-    left: -100px;
+    left: -90px;
     transform: rotate(90deg);
 }
 

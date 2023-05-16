@@ -64,6 +64,7 @@ header {
     width: 100%;
     z-index: 1;
     box-shadow: 2px 2px var(--border);
+    position: absolute;
 }
 
 .linkUnderline:hover {

@@ -1,0 +1,117 @@
+.aboutBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.leftAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#000000b7, rgba(2, 2, 39, 0.527)), url(../Images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.leftAbout h1 {
+    font-size: 3em;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.rightAbout {
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+.rightAbout h1 {
+    text-transform: capitalize;
+    border-bottom: 2px solid var(--blue);
+    width: 70%;
+    margin-bottom: 5%;
+    font-size: 2em;
+}
+
+.innerRightAbout {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: start;
+    align-items: start;
+}
+
+.innerRightAbout label {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.innerRightAbout label span h2 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--blue);
+    font-size: 1.7em;
+}
+
+.innerRightAbout label span p {
+   line-height: 25px;
+   font-size: 18px;
+}
+
+.innerRightAbout label img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutBox {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .leftAbout{
+        height: 50vh;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .rightAbout{
+        padding: 0;
+        margin-top: 20%;
+    }
+
+    .rightAbout h1 {
+        width: 100%;
+    }
+
+    .innerRightAbout label {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+    }
+
+    .innerRightAbout label span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .innerRightAbout label:nth-child(2){
+        flex-direction: column-reverse;
+    }
+
+         .innerRightAbout label:nth-child(4) {
+             flex-direction: column-reverse;
+         }
+}
