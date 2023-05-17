@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import '../Styles/testimonial.css'
-import ImageOne from '../Images/viral-marketing.png'
-import ImageTwo from '../Images/two.jpg'
-import ImageThree from '../Images/three.jpg'
-import ImageFour from '../Images/four.jpg'
-import ImageFive from '../Images/one.jpg'
-import ImageSix from '../Images/six.jpg'
+// import ImageOne from '../Images/viral-marketing.png'
+// import ImageTwo from '../Images/two.jpg'
+// import ImageThree from '../Images/three.jpg'
+// import ImageFour from '../Images/four.jpg'
+// import ImageFive from '../Images/one.jpg'
+// import ImageSix from '../Images/six.jpg'
 
 const Testimonials = () => {
   return (
@@ -26,9 +26,9 @@ const Testimonials = () => {
               <div class="carousel-item active">
                 <span className="slideBox">
                   <span>
-                    <div>
+                    {/* <div>
                       <img src={ImageOne} alt="ImageOne.jpb" />
-                    </div>
+                    </div> */}
                     <h3>Dev. Sam (CEO Toketiname)</h3>
                   </span>
                   <h2>COMMUNITY MANAGEMENT/MODERATION</h2>
@@ -41,9 +41,9 @@ const Testimonials = () => {
               <div class="carousel-item">
                 <span className="slideBox">
                   <span>
-                    <div>
+                    {/* <div>
                       <img src={ImageTwo} alt="ImageOne.jpb" />
-                    </div>
+                    </div> */}
                     <h3>Ignacio (Founder Bearded Buddies)</h3>
                   </span>
                   <h2>SOCIAL MEDIA MANAGEMENT</h2>
@@ -55,9 +55,9 @@ const Testimonials = () => {
               <div class="carousel-item">
                 <span className="slideBox">
                   <span>
-                    <div>
+                    {/* <div>
                       <img src={ImageThree} alt="ImageOne.jpb" />
-                    </div>
+                    </div> */}
                     <h3>Happy Client 1</h3>
                   </span>
                   <h2>BRAND THERAPY SESSION</h2>
@@ -70,9 +70,9 @@ const Testimonials = () => {
               <div class="carousel-item">
                 <span className="slideBox">
                   <span>
-                    <div>
+                    {/* <div>
                       <img src={ImageFour} alt="ImageOne.jpb" />
-                    </div>
+                    </div> */}
                     <h3>Happy Client 2</h3>
                   </span>
                   <h2>BRAND THERAPY SESSION</h2>
@@ -85,9 +85,9 @@ const Testimonials = () => {
               <div class="carousel-item">
                 <span className="slideBox">
                   <span>
-                    <div>
+                    {/* <div>
                       <img src={ImageFive} alt="ImageOne.jpg" />
-                    </div>
+                    </div> */}
                     <h3>Happy Client 3</h3>
                   </span>
                   <h2>BRAND THERAPY SESSION</h2>
@@ -102,9 +102,9 @@ const Testimonials = () => {
               <div class="carousel-item">
                 <span className="slideBox">
                   <span>
-                    <div>
+                    {/* <div>
                       <img src={ImageSix} alt="ImageOne.jpb" />
-                    </div>
+                    </div> */}
                     <h3>Nidhi, Head Of Content, CoindashMarketing</h3>
                   </span>
                   <h2>CONTENT</h2>

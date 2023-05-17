@@ -2,8 +2,14 @@ import React from 'react'
 import '../Styles/introduction.css'
 import { Link } from 'react-router-dom';
 import ImageBlog from '../Images/bg.jpg'
+import CircleIcon from "@mui/icons-material/Circle";
 
 const Introduction = () => {
+
+  const bullet = {
+    padding: '5px',
+    color: 'var(--textColor)'
+  }
   return (
     <div>
       <div className="splashBlog">
@@ -12,12 +18,20 @@ const Introduction = () => {
             <span className="nameBox">
               <div className="nameContent">
                 <h1>Samuel Nssien</h1>
-                <h4>Community Manager</h4>
+                <h4>
+                  Helping web3 projects, founders, & enthusiasts find clarity
+                  and scale
+                </h4>
               </div>
               <p>
-                Feel free to contact me if you need any of my services: Branding
-                Project Management Community Management Social Media Management
-                Community Moderation Content Creation Ghost Writing
+                Feel free to contact me if you need any of my services: <br />
+                <CircleIcon style={bullet}  /> Branding <br />
+                <CircleIcon style={bullet} /> Project Management <br />
+                <CircleIcon style={bullet} /> Community Management <br />
+                <CircleIcon style={bullet} /> Social Media Management <br />
+                <CircleIcon style={bullet} /> Community Moderation <br />
+                <CircleIcon style={bullet} /> Content Creation <br />
+                <CircleIcon style={bullet} /> Ghost Writing
               </p>
             </span>
             <div className="webLinks">
@@ -53,6 +67,16 @@ const Introduction = () => {
               <span class="icon arrow"></span>
             </span>
             <span class="button-text">
+              <Link className="link" to="/about">
+                About
+              </Link>
+            </span>
+          </button>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">
               <Link className="link" to="/experience">
                 Experience
               </Link>
@@ -65,16 +89,6 @@ const Introduction = () => {
             <span class="button-text">
               <Link className="link" to="/content">
                 contents
-              </Link>
-            </span>
-          </button>
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">
-              <Link className="link" to="/about">
-                About
               </Link>
             </span>
           </button>

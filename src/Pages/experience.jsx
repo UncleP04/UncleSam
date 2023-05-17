@@ -1,16 +1,17 @@
 import React from "react";
 import style from "../Styles/experience.module.css";
 import UncleSam from '../Images/sammy.jpg'
-import social from '../Images/viral-marketing.png'
-import copy from '../Images/note.png'
-import ghost from '../Images/content.png'
-import graphic from '../Images/illustration.png'
+// import social from '../Images/viral-marketing.png'
+// import copy from '../Images/note.png'
+// import ghost from '../Images/content.png'
+// import graphic from '../Images/illustration.png'
 import Navbar from "../Components/Navbar";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 
+
 const Experience = () => {
   const checked = {
-    color: "#2B3E86",
+    color: "var(--textColor)",
   };
 
   return (
@@ -21,7 +22,7 @@ const Experience = () => {
           <div className={style.leftIntroBox}>
             <img src={UncleSam} alt="profile.jpg" />
             <h2>Samuel Nssien</h2>
-            <p>community Manager</p>
+            <p>I only work with winners. If you're one, DM, let's Build!</p>
           </div>
           <div className={style.leftIntroContent}>
             <h1>area of expertise</h1>
@@ -29,15 +30,7 @@ const Experience = () => {
               <ul>
                 <li>
                   <RadioButtonUncheckedIcon style={checked} />
-                  Social Media Content
-                </li>
-                <li>
-                  <RadioButtonUncheckedIcon style={checked} />
                   Branding
-                </li>
-                <li>
-                  <RadioButtonUncheckedIcon style={checked} />
-                  Blogs and articles
                 </li>
                 <li>
                   <RadioButtonUncheckedIcon style={checked} />
@@ -47,11 +40,19 @@ const Experience = () => {
                   <RadioButtonUncheckedIcon style={checked} />
                   Community Moderation
                 </li>
+                <li>
+                  <RadioButtonUncheckedIcon style={checked} />
+                   Content Creation
+                </li>
+                <li>
+                  <RadioButtonUncheckedIcon style={checked} />
+                  Ghost Writing
+                </li>
               </ul>
             </span>
           </div>
         </div>
-        <div className={style.rightGrid}>
+        {/* <div className={style.rightGrid}>
           <h1>Working Experience</h1>
           <div className={style.additionBox}>
             <span>
@@ -91,7 +92,7 @@ const Experience = () => {
               </div>
             </span>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

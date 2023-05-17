@@ -15,6 +15,7 @@ h1, h2{
 :root {
   --white: #fff;
   --blue: #2B3E86;
+  --textColor: #179EDE;
   --paragraph: #090924;
   --headerFont: 'Instrument Serif',
     serif;

@@ -50,7 +50,7 @@
 }
 
 .nameBox h4 {
-    color: var(--paragraph);
+    color: var(--textColor);
 }
 
 .blogLinks {
@@ -219,7 +219,7 @@ button:hover .link {
         justify-content: center;
         align-items: flex-start;
         padding: 20px;
-        height: 50vh;
+        height: 60vh;
     }
 
     .nameContent {

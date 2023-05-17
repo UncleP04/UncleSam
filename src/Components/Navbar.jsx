@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "../Styles/nav.css";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
   const navRef = useRef();
@@ -7,6 +8,11 @@ const Navbar = () => {
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+
+  const Cancle = {
+    color: 'var(--white)',
+    fontSize: '35px'
+  }
 
   return (
     <div>
@@ -20,6 +26,14 @@ const Navbar = () => {
             id="links"
           >
             Home
+          </a>
+          <a
+            href="/about"
+            onClick={showNavbar}
+            className="linkUnderline active"
+            id="links"
+          >
+            About
           </a>
           <a
             href="/experience"
@@ -38,14 +52,6 @@ const Navbar = () => {
             Content
           </a>
           <a
-            href="/about"
-            onClick={showNavbar}
-            className="linkUnderline active"
-            id="links"
-          >
-            About
-          </a>
-          <a
             href="/testimonials"
             onClick={showNavbar}
             className="linkUnderline active"
@@ -54,7 +60,7 @@ const Navbar = () => {
             Testimonials
           </a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-            X
+            <CloseIcon style={Cancle} />
           </button>
         </nav>
         <button className="nav-btn" onClick={showNavbar}>
