@@ -1,7 +1,13 @@
 import React from 'react'
 import '../Styles/introduction.css'
 import { Link } from 'react-router-dom';
-import ImageBlog from '../Images/bg.jpg'
+import one from "../Images/s.jpg";
+import two from "../Images/ss.jpg";
+import three from "../Images/sss.jpg";
+import five from "../Images/sssss.jpg";
+import six from "../Images/ssssss.jpg";
+import Seven from "../Images/sssssss.jpg";
+import eight from "../Images/ssssssss.jpg";
 import CircleIcon from "@mui/icons-material/Circle";
 
 const Introduction = () => {
@@ -24,8 +30,17 @@ const Introduction = () => {
                 </h4>
               </div>
               <p>
+                <span className="experienceBox">
+                  <p>
+                    <h2>18+ </h2>
+                    <span>Clients and Partners</span>
+                  </p>
+                  <p>
+                    <h2> 2+ Years</h2> <span>Experience</span>
+                  </p>
+                </span>
                 Feel free to contact me if you need any of my services: <br />
-                <CircleIcon style={bullet}  /> Branding <br />
+                <CircleIcon style={bullet} /> Branding <br />
                 <CircleIcon style={bullet} /> Project Management <br />
                 <CircleIcon style={bullet} /> Community Management <br />
                 <CircleIcon style={bullet} /> Social Media Management <br />
@@ -59,7 +74,21 @@ const Introduction = () => {
               </Link>
             </div>
           </div>
-          <img src={ImageBlog} alt="ImageBlog.jpg" className="imageBlog" />
+
+          <div className="imageBox">
+            <span>
+              <h1>Friends I've made along the way.</h1>
+            </span>
+            <div>
+              <img src={one} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={two} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={three} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={five} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={six} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={Seven} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={eight} alt="ImageBlog.jpg" className="imageBlog" />
+            </div>
+          </div>
         </div>
         <span className="blogLinks">
           <button class="learn-more">
@@ -109,3 +138,6 @@ const Introduction = () => {
 }
 
 export default Introduction
+
+
+
