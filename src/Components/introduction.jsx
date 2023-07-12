@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import one from "../Images/s.jpg";
 import two from "../Images/ss.jpg";
 import three from "../Images/sss.jpg";
+import four from "../Images/ssss.jpg";
 import five from "../Images/sssss.jpg";
 import six from "../Images/ssssss.jpg";
 import Seven from "../Images/sssssss.jpg";
@@ -14,7 +15,7 @@ const Introduction = () => {
 
   const bullet = {
     padding: '5px',
-    color: 'var(--textColor)'
+    color: '#333'
   }
   return (
     <div>
@@ -33,7 +34,7 @@ const Introduction = () => {
                 <span className="experienceBox">
                   <p>
                     <h2>18+ </h2>
-                    <span>Clients and Partners</span>
+                    <span>Clients</span>
                   </p>
                   <p>
                     <h2> 2+ Years</h2> <span>Experience</span>
@@ -65,24 +66,18 @@ const Introduction = () => {
               >
                 Twitter
               </Link>
-              <Link
-                to="https://officialrepublic.onrender.com/"
-                className="websites"
-                target="_blank"
-              >
-                WebSite
-              </Link>
             </div>
           </div>
 
           <div className="imageBox">
             <span>
-              <h1>Friends I've made along the way.</h1>
+              <h1>Client's I've worked with.</h1>
             </span>
             <div>
               <img src={one} alt="ImageBlog.jpg" className="imageBlog" />
               <img src={two} alt="ImageBlog.jpg" className="imageBlog" />
               <img src={three} alt="ImageBlog.jpg" className="imageBlog" />
+              <img src={four} alt="ImageBlog.jpg" className="imageBlog" />
               <img src={five} alt="ImageBlog.jpg" className="imageBlog" />
               <img src={six} alt="ImageBlog.jpg" className="imageBlog" />
               <img src={Seven} alt="ImageBlog.jpg" className="imageBlog" />

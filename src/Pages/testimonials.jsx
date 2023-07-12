@@ -1,12 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import '../Styles/testimonial.css'
-// import ImageOne from '../Images/viral-marketing.png'
-// import ImageTwo from '../Images/two.jpg'
-// import ImageThree from '../Images/three.jpg'
-// import ImageFour from '../Images/four.jpg'
-// import ImageFive from '../Images/one.jpg'
-// import ImageSix from '../Images/six.jpg'
 
 const Testimonials = () => {
   return (

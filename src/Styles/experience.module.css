@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 3% 10%;
+    background: #000;
 }
 
 .leftGrid {
@@ -17,7 +18,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    background: #ecf3f7;
+    background: #fff;
 }
 
 .leftIntroBox {
@@ -25,7 +26,7 @@
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    background: var(--blue);
+    background: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -11,7 +11,7 @@ import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 
 const Experience = () => {
   const checked = {
-    color: "var(--textColor)",
+    color: "#000",
   };
 
   return (

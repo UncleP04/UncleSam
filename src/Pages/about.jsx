@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import style from "../Styles/about.module.css";
-import brand from '../Images/brand.jpg'
-import blog from '../Images/blog.jpg'
-import context from '../Images/context.jpg'
-import moderate from '../Images/moderate.jpg'
-import manage from '../Images/management.jpg'
+import brand from '../Images/brand-removebg-preview.png'
+import blog from '../Images/blog-removebg-preview.png'
+import context from '../Images/context-removebg-preview.png'
+import moderate from '../Images/moderate-removebg-preview.png'
+import manage from '../Images/management-removebg-preview.png'
 
 const About = () => {
   return (
